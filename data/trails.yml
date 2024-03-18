@@ -1,0 +1,16 @@
+card1:
+  title: "Graysx"
+  text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
+  img: "assets/img/bg-hero.jpg"
+card2:
+  title: "Trail dei Maghe 18 KM"
+  text: 'Il "Trail dei Maghe 18KM" è la distanza principe dell''evento, un percorso avvincente di 18 chilometri con un dislivello positivo di 950 metri che regala un''autentica sfida a chi desidera superare i propri limiti. La traccia attraversa paesaggi unici, con un mix di salite impegnative e discese tecniche, regalando momenti indimenticabili a tutti i partecipanti.'
+  img: "assets/img/demo-image-01.jpg"
+card3:
+  title: "Camminata non competitiva 9 KM"
+  text: "Una gara di 9 chilometri dedicata alle famiglie o agli amanti di percorsi meno impegnativi. Il percorso è studiato per immergere i partecipanti nella bellezza incontaminata della natura circostante. Sentieri panoramici, boschi incantati e vedute spettacolari saranno compagni di viaggio lungo ogni chilometro. Un'opportunità perfetta per condividere la passione per la corsa con i tuoi cari."
+  img: "assets/img/demo-image-02.jpg"
+card4:
+  title: "Trail dei Maghetti 3 KM"
+  text: 'Un percorso speciale di 3 chilometri progettato appositamente per i più piccoli, la "Gara dei Maghetti" sarà un''esperienza indimenticabile per i giovani trailer che vogliono esplorare la magia del trail running.'
+  img: "assets/img/demo-image-02.jpg"

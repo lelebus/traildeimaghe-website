@@ -1,0 +1,137 @@
+/* GENERAL */
+
+:root {
+    --primary: #fd393a;
+    --primary-hover: #fd4c4d;
+    --secondary: #004bb2;
+}
+
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow'), url('Barlow-Medium.ttf') format('truetype');
+}
+
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sifonn Pro', sans-serif;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+}
+
+.bg-theme-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 100px;
+}
+
+/* SECTIONS */
+
+#mainNav {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+#mainNav.navbar-shrink {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainNav .navbar-brand img {
+    /* position: ab solute; */
+    height: 70px;
+    /* margin-top: -20px; */
+}
+
+#mainNav ul li .nav-link,
+#mainNav.navbar-shrink .nav-link.active {
+    color: black;
+    padding: 1rem 1.5rem 1rem;
+}
+#mainNav ul li .nav-link.active
+#mainNav.navbar-shrink .nav-link.active {
+    border: none !important;
+}
+#mainNav ul li .nav-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+#mainNav ul li:last-child .nav-link {
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary);
+    margin-left: 1.5rem;
+}
+#mainNav ul li:last-child .nav-link:hover {
+    text-decoration: none;
+    background-color: var(--primary-hover);
+}
+
+.masthead {
+    height: 100vh;
+}
+
+.masthead video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.masthead .btn {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.masthead .btn:hover {
+    background-color: var(--primary-hover);
+}
+
+#about {
+    background: white;
+    color: black;
+}
+
+#projects .bg-hard {
+    background: var(--primary);
+    color: white;
+}
+
+#projects .bg-medium {
+    background: var(--secondary);
+    color: white;
+}
+
+#projects .bg-easy {
+    background: white;
+    color: black;
+}
+
+.contact-section .card {
+    border-color: var(--primary) !important;
+}
