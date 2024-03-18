@@ -164,3 +164,20 @@ p {
 .contact-section .card {
     border-color: #00306c !important;
 }
+
+@media screen and (max-width: 768px) {
+    #mainNav ul li .nav-link {
+        text-align: center;
+    }
+    #mainNav ul li:last-child .nav-link {
+        margin: 0;
+    }
+
+    .masthead img {
+        width: 80%;
+    }
+
+    .sponsors-section .sponsor-logo {
+        width: 30%;
+    }
+}
