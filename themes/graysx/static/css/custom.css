@@ -3,7 +3,7 @@
 :root {
     --primary: #fd393a;
     --primary-hover: #fd4c4d;
-    --secondary: #004bb2;
+    --secondary: #004aa7;
 }
 
 @font-face {
@@ -40,6 +40,10 @@ p {
 .bg-theme-secondary {
     background: var(--secondary);
     color: white;
+}
+
+.bg-theme-grey {
+    background: #dedede;
 }
 
 .absolute-bottom {
@@ -132,6 +136,11 @@ p {
     color: black;
 }
 
+#programme ul li {
+    list-style: none;
+    padding: 0.3rem 0;
+}
+
 .contact-section .card {
-    border-color: var(--primary) !important;
+    border-color: #00306c !important;
 }

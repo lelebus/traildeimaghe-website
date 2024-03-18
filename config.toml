@@ -28,13 +28,13 @@ sbtoken = "TOKEN_HERE"
 ## Menu Items
 [menu]
   [[menu.main]]
-  name = "La Storia"
-  URL = "/la-storia"
+  name = "Storie e Leggende"
+  URL = "/storie-e-leggende"
   weight = 1
 
   [[menu.main]]
   name = "Chi Siamo"
-  URL = "#projects"
+  URL = "/chi-siamo"
   weight = 2
 
   [[menu.main]]

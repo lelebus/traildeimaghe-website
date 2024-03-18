@@ -27,8 +27,30 @@
         </header>
         
         <!-- About-->
-        {{ with site.Data.homepage.about }}
         <section class="about-section text-center" id="about">
+            {{ with site.Data.homepage.about }}
+            <div class="container px-4 px-lg-5 mb-10">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-black mb-4">{{ .title }}</h2>
+                        <p class="text-black">{{ .desc | markdownify }}</p>
+                        {{ if .button.enable }}
+                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ if .image }}
+                    <img class="img-fluid" src="{{ .image }}" alt="..." />
+                {{ end}}
+            </div>
+            {{ end }}
+            
+            {{- partial "trails.html" . -}}
+        </section>
+
+        <!-- Programme-->
+        <section class="programme-section bg-theme-grey text-center" id="programme">
+            {{ with site.Data.homepage.programme }}
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
@@ -43,10 +65,8 @@
                     <img class="img-fluid" src="{{ .image }}" alt="..." />
                 {{ end}}
             </div>
+            {{ end }}
         </section>
-        {{ end }}
-
-        {{- partial "trails.html" . -}}
 
         <!--
         <section class="signup-section" id="signup">
