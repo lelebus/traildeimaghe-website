@@ -141,6 +141,26 @@ p {
     padding: 0.3rem 0;
 }
 
+.sponsors-section {
+    padding: 10rem 0;
+}
+
+.sponsors-section .sponsor-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sponsors-section .sponsor-logo {
+    width: 20%;
+}
+
+.sponsors-section .sponsor-logo img {
+    width: 70%;
+}
+
 .contact-section .card {
     border-color: #00306c !important;
 }

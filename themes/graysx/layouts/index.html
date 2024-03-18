@@ -19,7 +19,7 @@
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
                     </div>
                     <div class="text-center absolute-bottom">
-                        <a class="btn btn-primary" href="{{ .header.button.url }}">{{ .header.button.text }}</a>
+                        <a class="btn btn-primary" href="{{ .header.button.url }}" target="_blank">{{ .header.button.text }}</a>
                     </div>
                 </div>
             </div>
@@ -94,40 +94,6 @@
             </div>
         </section>
     -->
-        
-        <section class="contact-section bg-theme-secondary">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-location-crosshairs text-black mb-2"></i>
-                                <div class="small text-black">{{ site.Params.address }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fa-regular fa-calendar text-black mb-2"></i>
-                                <div class="small text-black">{{ site.Params.date }}</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-black mb-2"></i>
-                                <div class="small text-black">{{ site.Params.phone }}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="{{ site.Params.instagram }}"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </section>
 
 {{- partial "footer.html" . -}}
 </body>
