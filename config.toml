@@ -1,12 +1,14 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://traildeimaghe.it'
 languageCode = 'it-IT'
 theme = 'graysx'
 title = 'Trail Dei Maghe'
 
 ## Site Settings
 [params]
+description = "Siete pronti per un'avventura indimenticabile immersi nella magia delle montagne? Il Trail dei Maghe vi accoglie a braccia aperte in una celebrazione unica di corsa, natura e spirito avventuroso. Con percorsi avvincenti che attraversano I paesaggi incantevoli delle Dolomiti orientali e sfidano le vostre capacità, questa gara è molto più di una competizione: è un'esperienza da vivere e condividere."
 logo = "assets/img/logo.png"
 favicon = "assets/favicon.png"
+socialimage = "assets/img/logo-black.png"
 
 # Info
 address = "Lorenzago di Cadore, Belluno - Dolomiti"
@@ -14,11 +16,7 @@ date = "16 Giugno 2024"
 phone = "+39 331 939 7508"
 
 # Socials
-
-twitter = "#"
-facebook = "#"
 instagram = "https://www.instagram.com/traildeimaghe"
-github = "https://github.com/akatiggerx04/graysx-hugo"
 
 # Other
 
