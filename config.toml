@@ -2,13 +2,14 @@ baseURL = 'https://traildeimaghe.it'
 languageCode = 'it-IT'
 theme = 'graysx'
 title = 'Trail Dei Maghe'
+contentDir = 'content'
 
 ## Site Settings
 [params]
 description = "Siete pronti per un'avventura indimenticabile immersi nella magia delle montagne? Il Trail dei Maghe vi accoglie a braccia aperte in una celebrazione unica di corsa, natura e spirito avventuroso. Con percorsi avvincenti che attraversano I paesaggi incantevoli delle Dolomiti orientali e sfidano le vostre capacità, questa gara è molto più di una competizione: è un'esperienza da vivere e condividere."
-logo = "assets/img/logo.png"
-favicon = "assets/favicon.png"
-socialimage = "assets/img/logo-black.png"
+logo = "/assets/img/logo.png"
+favicon = "/assets/favicon.png"
+socialimage = "/assets/img/logo-black.png"
 
 # Info
 address = "Lorenzago di Cadore, Belluno - Dolomiti"
@@ -17,11 +18,6 @@ phone = "+39 331 939 7508"
 
 # Socials
 instagram = "https://www.instagram.com/traildeimaghe"
-
-# Other
-
-# Startbootstrap Contact Form Token https://startbootstrap.com/solution/contact-forms
-sbtoken = "TOKEN_HERE"
 
 ## Menu Items
 [menu]
@@ -36,12 +32,11 @@ sbtoken = "TOKEN_HERE"
   weight = 2
 
   [[menu.main]]
+  name = "Chi Siamo"
+  URL = "/aaaaaa"
+  weight = 2
+
+  [[menu.main]]
   name = "ISCRIVITI"
   URL = "https://keepsporting.com/cr/65eab4721e801f41bd4b63c7/trail-dei-maghe?fbclid=IwAR28ydQrzrLJ8ypw33x8bd3JaLR8cWdzaXSZWsKX884PxYg-haIQak0TRYU"
   weight = 3
-
-
-# Credits
-
-# This theme is forked from: https://github.com/startbootstrap/startbootstrap-grayscale
-# This theme is forked by: https://github.com/akatiggerx04

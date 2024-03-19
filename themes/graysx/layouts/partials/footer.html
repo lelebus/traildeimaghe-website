@@ -1,69 +1,44 @@
-<!-- Sponsor-->
-<section class="sponsors-section bg-white text-center my-10" id="sponsor">
-    {{ with site.Data.homepage.sponsor }}
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 pb-2 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-black mb-5">{{ .title }}</h2>
-                {{ if .desc }}
-                    <p class="text-black">{{ .desc | markdownify }}</p>
-                {{ end }}
-            </div>
-        </div>
-
-        <div class="d-flex sponsor-logos justify-content-center">
-            {{ range .logos }}
-            <div class="sponsor-logo">
-                {{ if .link}}
-                    <a href="{{.link}}" target="_blank"/>
-                        <img src="{{ .src }}" alt="{{ .alt }}" />
-                    </a>
-                {{ else }}
-                    <img src="{{ .src }}" alt="{{ .alt }}" />
-                {{ end }}
-            </div>
-            {{ end }}
-        </div>
-    </div>
-    {{ end }}
-</section>
-
-<section class="contact-section bg-theme-secondary">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-location-crosshairs text-black mb-2"></i>
-                        <div class="small text-black">{{ site.Params.address }}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fa-regular fa-calendar text-black mb-2"></i>
-                        <div class="small text-black">{{ site.Params.date }}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt text-black mb-2"></i>
-                        <div class="small text-black">{{ site.Params.phone }}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="{{ site.Params.instagram }}"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</section>
+</div>
 
 <!-- Footer-->
-<footer class="footer bg-theme-secondary small text-center text-white-50"><div class="container text-white px-4 px-lg-5">Copyright &copy; {{ .Name }} {{ now.Format "2006"}}</div></footer>
+<footer class="footer bg-theme-secondary small text-center text-white-50">
+    <section class="contact-section bg-theme-secondary">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-location-crosshairs text-black mb-2"></i>
+                            <div class="small text-black">{{ site.Params.address }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-regular fa-calendar text-black mb-2"></i>
+                            <div class="small text-black">{{ site.Params.date }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-black mb-2"></i>
+                            <div class="small text-black">{{ site.Params.phone }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="{{ site.Params.instagram }}"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container copyright text-white px-4 px-lg-5">Copyright &copy; {{ .Name }} {{ now.Format "2006"}}</div>
+
+</footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
@@ -73,3 +48,6 @@
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+</body>
+</html>

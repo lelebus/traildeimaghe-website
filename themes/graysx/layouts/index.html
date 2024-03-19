@@ -1,100 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-{{- partial "head.html" . -}}
-<body id="page-top">
 {{- partial "header.html" . -}}
-        <!-- Masthead-->
-        <header class="masthead">
-            {{ with site.Data.homepage.main }}
-            {{ if .header.video }}
-                <video autoplay loop muted playsinline src="{{ .header.video }}"></video>
-            {{ end }}
 
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ .header.logo.src }}" alt="{{ .header.logo.alt }}" />
+<!-- Masthead-->
+<header class="masthead">
+    {{ with site.Data.homepage.main }}
+    {{ if .header.video }}
+        <video autoplay loop muted playsinline src="{{ .header.video }}"></video>
+    {{ end }}
 
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <img src="{{ .header.logo.src }}" alt="{{ .header.logo.alt }}" />
+
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">{{ .header.title }}</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
+            </div>
+            <div class="text-center absolute-bottom">
+                <a class="btn btn-primary" href="{{ .header.button.url }}" target="_blank">{{ .header.button.text }}</a>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</header>
+
+<!-- About-->
+<section class="about-section text-center" id="about">
+    {{ with site.Data.homepage.about }}
+    <div class="container px-4 px-lg-5 mb-10">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-black mb-4">{{ .title }}</h2>
+                <p class="text-black">{{ .desc | markdownify }}</p>
+                {{ if .button.enable }}
+                <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ if .image }}
+            <img class="img-fluid" src="{{ .image }}" alt="..." />
+        {{ end}}
+    </div>
+    {{ end }}
+    
+    {{- partial "trails.html" . -}}
+</section>
+
+<!-- Programme-->
+<section class="programme-section bg-theme-grey text-center" id="programme">
+    {{ with site.Data.homepage.programme }}
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-black mb-4">{{ .title }}</h2>
+                <p class="text-black">{{ .desc | markdownify }}</p>
+                {{ if .button.enable }}
+                <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ if .image }}
+            <img class="img-fluid" src="{{ .image }}" alt="..." />
+        {{ end}}
+    </div>
+    {{ end }}
+</section>
+
+<!--
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                <form class="form-signup" id="contactForm" data-sb-form-api-token="{{ site.Params.sbtoken }}">
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
                     </div>
-                    <div class="text-center absolute-bottom">
-                        <a class="btn btn-primary" href="{{ .header.button.url }}" target="_blank">{{ .header.button.text }}</a>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2 text-white">
+                            <div class="fw-bolder">Form submission successful!</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<!-- Sponsor-->
+<section class="sponsors-section bg-white text-center my-10" id="sponsor">
+    {{ with site.Data.homepage.sponsor }}
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 pb-2 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-black mb-5">{{ .title }}</h2>
+                {{ if .desc }}
+                    <p class="text-black">{{ .desc | markdownify }}</p>
+                {{ end }}
+            </div>
+        </div>
+
+        <div class="d-flex sponsor-logos justify-content-center">
+            {{ range .logos }}
+            <div class="sponsor-logo">
+                {{ if .link}}
+                    <a href="{{.link}}" target="_blank"/>
+                        <img src="{{ .src }}" alt="{{ .alt }}" />
+                    </a>
+                {{ else }}
+                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                {{ end }}
             </div>
             {{ end }}
-        </header>
-        
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            {{ with site.Data.homepage.about }}
-            <div class="container px-4 px-lg-5 mb-10">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-black mb-4">{{ .title }}</h2>
-                        <p class="text-black">{{ .desc | markdownify }}</p>
-                        {{ if .button.enable }}
-                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
-                        {{ end }}
-                    </div>
-                </div>
-                {{ if .image }}
-                    <img class="img-fluid" src="{{ .image }}" alt="..." />
-                {{ end}}
-            </div>
-            {{ end }}
-            
-            {{- partial "trails.html" . -}}
-        </section>
+        </div>
+    </div>
+    {{ end }}
+</section>
 
-        <!-- Programme-->
-        <section class="programme-section bg-theme-grey text-center" id="programme">
-            {{ with site.Data.homepage.programme }}
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-black mb-4">{{ .title }}</h2>
-                        <p class="text-black">{{ .desc | markdownify }}</p>
-                        {{ if .button.enable }}
-                        <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
-                        {{ end }}
-                    </div>
-                </div>
-                {{ if .image }}
-                    <img class="img-fluid" src="{{ .image }}" alt="..." />
-                {{ end}}
-            </div>
-            {{ end }}
-        </section>
-
-        <!--
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="{{ site.Params.sbtoken }}">
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    -->
-
-{{- partial "footer.html" . -}}
-</body>
-</html>
+{{- partialCached "footer.html" . -}}

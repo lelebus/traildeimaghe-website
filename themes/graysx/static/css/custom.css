@@ -43,7 +43,7 @@ p {
 }
 
 .bg-theme-grey {
-    background: #dedede;
+    background: #e7f0fa;
 }
 
 .absolute-bottom {
@@ -51,7 +51,15 @@ p {
     bottom: 100px;
 }
 
-/* SECTIONS */
+/* FOOTER */
+
+footer .copyright {
+    background: var(--secondary);
+    color: white;
+    padding: 2rem 0;
+}
+
+/* HOMESITE */
 
 #mainNav {
     background: rgba(255, 255, 255, 0.8);
@@ -180,4 +188,36 @@ p {
     .sponsors-section .sponsor-logo {
         width: 30%;
     }
+}
+
+/* SINGLE */
+
+.page-ct .title-ct {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-ct .content-ct {
+    margin-bottom: 5rem;
+}
+
+.page-ct .content-ct h2,
+.page-ct .content-ct h3
+.page-ct .content-ct h4
+.page-ct .content-ct h5
+.page-ct .content-ct h6 {
+    margin-top: 3rem;
+}
+
+.page-ct .content-ct figure img {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
 }
