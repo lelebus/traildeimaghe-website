@@ -206,9 +206,9 @@ footer .copyright {
 }
 
 .page-ct .content-ct h2,
-.page-ct .content-ct h3
-.page-ct .content-ct h4
-.page-ct .content-ct h5
+.page-ct .content-ct h3,
+.page-ct .content-ct h4,
+.page-ct .content-ct h5,
 .page-ct .content-ct h6 {
     margin-top: 3rem;
 }

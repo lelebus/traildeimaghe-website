@@ -5,7 +5,9 @@
 </div>
 
 <div class="content-ct container">
-    {{ .Content }}
+    {{ $content := .Content }}
+    {{ $content = replace $content "\\n" "<br>" | safeHTML }}
+    {{ $content | safeHTML }}
 </div>
 
 {{- partial "footer.html" . -}}
