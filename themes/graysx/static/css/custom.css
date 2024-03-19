@@ -184,6 +184,9 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
+    #mainNav .navbar-brand {
+        padding: 0;
+    }
     #mainNav ul li .nav-link {
         text-align: center;
     }
