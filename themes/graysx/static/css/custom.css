@@ -101,6 +101,10 @@ footer .copyright {
     text-decoration: none;
     background-color: var(--primary-hover);
 }
+#mainNav ul li .nav-link.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .masthead {
     height: 100vh;
