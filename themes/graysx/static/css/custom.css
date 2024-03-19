@@ -228,6 +228,6 @@ footer .copyright {
     width: 100%;
 }
 
-.container {
+.page-ct .content-ct .container {
     max-width: 960px;
 }
