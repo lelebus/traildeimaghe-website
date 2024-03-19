@@ -94,7 +94,7 @@
 
 <!-- Sponsor-->
 <section class="sponsors-section bg-white text-center my-10" id="sponsor">
-    {{ with site.Data.homepage.sponsor }}
+    {{ with site.Data.sponsor }}
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 pb-2 justify-content-center">
             <div class="col-lg-8">
@@ -106,8 +106,22 @@
         </div>
 
         <div class="d-flex sponsor-logos justify-content-center">
-            {{ range .logos }}
+            {{ range .sponsors }}
             <div class="sponsor-logo">
+                {{ if .link}}
+                    <a href="{{.link}}" target="_blank"/>
+                        <img src="{{ .src }}" alt="{{ .alt }}" />
+                    </a>
+                {{ else }}
+                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <div class="d-flex partner-logos justify-content-center mt-3">
+            {{ range .partners }}
+            <div class="partner-logo">
                 {{ if .link}}
                     <a href="{{.link}}" target="_blank"/>
                         <img src="{{ .src }}" alt="{{ .alt }}" />

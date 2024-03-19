@@ -153,19 +153,25 @@ footer .copyright {
     padding: 10rem 0;
 }
 
-.sponsors-section .sponsor-logos {
+.sponsors-section .sponsor-logos,
+.sponsors-section .partner-logos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
 }
 
-.sponsors-section .sponsor-logo {
+.sponsors-section .sponsor-logo,
+.sponsors-section .partner-logo {
     width: 20%;
 }
 
 .sponsors-section .sponsor-logo img {
+    width: 80%;
+}
+
+.sponsors-section .partner-logo img {
     width: 70%;
 }
 
