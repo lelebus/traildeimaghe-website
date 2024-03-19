@@ -23,17 +23,17 @@ about:
 programme:
   title: "Programma 16 Giugno 2024"
   desc: "
-  - **Ore 8.00 – 9.15**: iscrizioni e ritiro braccialetti in piazza Calvi a Lorenzago 
+  - **Ore 9.00**: partenza Trail dei Maghe 18 km (competitiva)
 
-  - **Ore 9.30**: partenza Trail dei Maghe 18 km (competitiva)
-
-  - **Ore 9.45**: partenza corse 10km e  3km (non competitive)
+  - **Ore 9.15**: partenza corse 9km e  3km (non competitive)
 
   - **Ore 12.00-14.00**: pranzo presso la tendostruttura in Via del Lago
 
-  - **Ore 13.30**: premiazioni"
-  button:
-    enable: false
-    text: "Button"
-    url: "#"
+  - **Ore 13.30**: premiazioni in piazza Calvi
+
+
+  - *** **Ritiro pettorali e iscrizioni** *15 giugno:* dalle ore 16 alle 19; *16 giugno:* dalle ore 6.30 alle 8, presso il Municipio di Lorenzago al piano terra"
+  enable: false
+  text: "Button"
+  url: "#"
   # image: "assets/img/bg-about.jpg"
