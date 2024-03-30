@@ -96,15 +96,22 @@
 <section class="sponsors-section bg-white text-center my-10" id="sponsor">
     {{ with site.Data.sponsor }}
     <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 pb-2 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-black mb-5">{{ .title }}</h2>
-                {{ if .desc }}
-                    <p class="text-black">{{ .desc | markdownify }}</p>
+        <h3 class="text-black mb-4">Sponsor Tecnici</h3>
+        <div class="d-flex sponsors-logos sponsor-logos justify-content-center">
+            {{ range .main_sponsors }}
+            <div class="sponsor-logo main-sponsor-logo">
+                {{ if .link}}
+                    <a href="{{.link}}" target="_blank"/>
+                        <img src="{{ .src }}" alt="{{ .alt }}" />
+                    </a>
+                {{ else }}
+                    <img src="{{ .src }}" alt="{{ .alt }}" />
                 {{ end }}
             </div>
+            {{ end }}
         </div>
 
+        <h3 class="text-black mt-5 mb-4">Sponsor Gold</h3>
         <div class="d-flex sponsor-logos justify-content-center">
             {{ range .sponsors }}
             <div class="sponsor-logo">
@@ -119,6 +126,7 @@
             {{ end }}
         </div>
 
+        <h3 class="text-black mt-5 mb-4">Con il patrocinio di</h3>
         <div class="d-flex partner-logos justify-content-center mt-3">
             {{ range .partners }}
             <div class="partner-logo">

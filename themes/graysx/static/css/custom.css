@@ -171,6 +171,10 @@ footer .copyright {
     width: 20%;
 }
 
+.sponsors-section .sponsor-logo.main-sponsor-logo {
+    width: 30%;
+}
+
 .sponsors-section .sponsor-logo img {
     width: 80%;
 }
@@ -196,6 +200,10 @@ footer .copyright {
 
     .masthead img {
         width: 80%;
+    }
+
+    .sponsors-section .sponsor-logo.main-sponsor-logo {
+        width: 40%;
     }
 
     .sponsors-section .sponsor-logo {
