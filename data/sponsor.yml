@@ -2,7 +2,10 @@ title: "Sponsor & Partner"
 
 main_sponsors: 
   - src: "assets/img/sponsor/sportway.png"
-    alt: "Sportway"
+    alt: "Sportway Conegliano"
+    link: "https://sportwayshop.it/"
+  - src: "assets/img/sponsor/sportwaybl.png"
+    alt: "Sportway Belluno"
     link: "https://sportwaybl.it/"
   - src: "assets/img/sponsor/brooks.png"
     alt: "Brooks Running"
