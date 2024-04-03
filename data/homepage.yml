@@ -2,12 +2,13 @@
 main:
   header:
     logo:
-      src: "assets/img/logo.png" # Logo Image
+      src: "/assets/img/logo.png" # Logo Image
       alt: "Trail dei Maghe, Monte Cridola" # Logo Alt Text
     # video: "assets/videos/bg-hero.mp4" # Video Background
     button:
       text: "Iscriviti" # Button Text
       url: "https://keepsporting.com/cr/65eab4721e801f41bd4b63c7/trail-dei-maghe?fbclid=IwAR28ydQrzrLJ8ypw33x8bd3JaLR8cWdzaXSZWsKX884PxYg-haIQak0TRYU" 
+      alt: "Iscriviti alla gara"
 
 # About
 about:
