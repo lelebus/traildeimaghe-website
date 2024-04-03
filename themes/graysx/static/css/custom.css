@@ -242,3 +242,35 @@ footer .copyright {
 .page-ct .content-ct .container {
     max-width: 960px;
 }
+
+/* ICONS */
+
+i {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+i.icon-menu-bars {
+    background: url('/assets/icons/menu-bars.svg');
+}
+
+i.icon-location {
+    background: url('/assets/icons/location.svg');
+}
+
+i.icon-calendar {
+    background: url('/assets/icons/calendar.svg');
+}
+
+i.icon-mobile-phone {
+    background: url('/assets/icons/mobile-phone.svg');
+}
+
+i.icon-instagram {
+    background: url('/assets/icons/instagram.svg');
+}
+
