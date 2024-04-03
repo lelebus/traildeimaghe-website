@@ -6,7 +6,8 @@ contentDir = 'content'
 
 ## Site Settings
 [params]
-description = "Siete pronti per un'avventura indimenticabile immersi nella magia delle montagne? Il Trail dei Maghe vi accoglie a braccia aperte in una celebrazione unica di corsa, natura e spirito avventuroso. Con percorsi avvincenti che attraversano I paesaggi incantevoli delle Dolomiti orientali e sfidano le vostre capacità, questa gara è molto più di una competizione: è un'esperienza da vivere e condividere."
+description = "Siete pronti per un'avventura indimenticabile immersi nella magia delle Dolomiti? Trail dei Maghe vi aspetta a Lorenzago di Cadore (BL) per una gara tra paesaggi incantevoli."
+tags = ["dolomiti", "competizione", "gara", "corsa", "montagne", "cadore", "trail running"]
 logo = "/assets/img/logo.png"
 favicon = "/assets/favicon.png"
 socialimage = "/assets/img/logo-black.png"

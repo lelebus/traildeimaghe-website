@@ -14,7 +14,7 @@
         <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6">
-                <img class="img-fluid" src="{{ .card2.img }}" alt="{{ .card2.alt}}" />
+                <img class="img-fluid" src="{{ .card2.img }}" alt="{{ .card2.alt }}" title="{{ .card2.alt }}"/>
             </div>
             <div class="col-lg-6">
                 <div class="bg-hard text-center h-100 project">
@@ -22,7 +22,7 @@
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">{{ .card2.title }}</h4>
                             <p class="mb-3 text-white">{{ .card2.text }}</p>
-                            <a href="{{ .card2.link }}" target="_blank" class="text-white">Scarica traccia GPX</a>
+                            <a href="{{ .card2.link }}" target="_blank" class="text-white" title="Traccia Suunto Trail Running {{ .card2.title }}">Scarica traccia GPX</a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6">
                 <a href="{{ .card3.link }}" target="_blank">
-                    <img class="img-fluid" src="{{ .card3.img }}" alt="{{ .card3.alt}}" />
+                    <img class="img-fluid" src="{{ .card3.img }}" alt="{{ .card3.alt }}" title="{{ .card3.alt }}" />
                 </a>    
             </div>
             <div class="col-lg-6 order-lg-first">
@@ -41,17 +41,16 @@
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">{{ .card3.title }}</h4>
                             <p class="mb-3 text-white">{{ .card3.text }}</p>
-                            <a href="{{ .card3.link }}" target="_blank" class="text-white">Scarica traccia GPX</a>
+                            <a href="{{ .card3.link }}" target="_blank" class="text-white" title="Traccia Suunto Trail Running {{ .card3.title }}">Scarica traccia GPX</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6">
                 <a href="{{ .card4.link }}" target="_blank">
-                    <img class="img-fluid" src="{{ .card4.img }}" alt="{{ .card4.alt}}" />
+                    <img class="img-fluid" src="{{ .card4.img }}" alt="{{ .card4.alt }}" title="{{ .card4.alt }}" />
                 </a>
             </div>
             <div class="col-lg-6">
@@ -60,7 +59,7 @@
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-black">{{ .card4.title }}</h4>
                             <p class="mb-3 text-black">{{ .card4.text }}</p>
-                            <a href="{{ .card4.link }}" target="_blank" class="text-black">Scarica traccia GPX</a>
+                            <a href="{{ .card4.link }}" target="_blank" class="text-black" title="Traccia Suunto Trail Running {{ .card4.title }}">Scarica traccia GPX</a>
                         </div>
                     </div>
                 </div>
