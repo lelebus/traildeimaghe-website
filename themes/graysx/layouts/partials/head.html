@@ -1,5 +1,11 @@
 <head>
     <meta charset="utf-8" />
+    
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta name="title" content="{{ $title }}">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta property="og:locale" content="it">
     <link rel="canonical" href="{{ .Site.BaseURL }}">
@@ -19,10 +25,4 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="/css/custom.css" rel="stylesheet" />
-    
-    {{ $title := print .Title " | " .Site.Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <title>{{ $title }}</title>
-    <meta name="title" content="{{ $title }}">
-
 </head>
