@@ -158,7 +158,8 @@ footer .copyright {
 }
 
 .sponsors-section .sponsor-logos,
-.sponsors-section .partner-logos {
+.sponsors-section .partner-logos,
+.sponsors-section .patrons-logos {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -166,9 +167,13 @@ footer .copyright {
     gap: 5px;
 }
 
-.sponsors-section .sponsor-logo,
-.sponsors-section .partner-logo {
+.sponsors-section .sponsor-logo {
     width: 20%;
+}
+
+.sponsors-section .partner-logo,
+.sponsors-section .patron-logo{
+    width: 15%;
 }
 
 .sponsors-section .sponsor-logo.main-sponsor-logo {
@@ -179,7 +184,8 @@ footer .copyright {
     width: 80%;
 }
 
-.sponsors-section .partner-logo img {
+.sponsors-section .partner-logo img,
+.sponsors-section .patron-logo img {
     width: 70%;
 }
 

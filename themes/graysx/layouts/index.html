@@ -98,6 +98,21 @@
     <div class="container px-4 px-lg-5">
         <h3 class="text-black mb-4">Sponsor Tecnici</h3>
         <div class="d-flex sponsors-logos sponsor-logos justify-content-center">
+            {{ range .tech_sponsors }}
+            <div class="sponsor-logo main-sponsor-logo">
+                {{ if .link}}
+                    <a href="{{.link}}" target="_blank"/>
+                        <img src="{{ .src }}" alt="{{ .alt }}" />
+                    </a>
+                {{ else }}
+                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <h3 class="text-black mt-5 mb-2">Main Sponsors</h3>
+        <div class="d-flex sponsors-logos sponsor-logos justify-content-center">
             {{ range .main_sponsors }}
             <div class="sponsor-logo main-sponsor-logo">
                 {{ if .link}}
@@ -111,9 +126,9 @@
             {{ end }}
         </div>
 
-        <h3 class="text-black mt-5 mb-4">Sponsor</h3>
+        <h3 class="text-black mt-5 mb-2">Official Sponsors</h3>
         <div class="d-flex sponsor-logos justify-content-center">
-            {{ range .sponsors }}
+            {{ range .official_sponsors }}
             <div class="sponsor-logo">
                 {{ if .link}}
                     <a href="{{.link}}" target="_blank"/>
@@ -126,10 +141,25 @@
             {{ end }}
         </div>
 
-        <h3 class="text-black mt-5 mb-4">Con il patrocinio di</h3>
-        <div class="d-flex partner-logos justify-content-center mt-3">
-            {{ range .partners }}
+        <h3 class="text-black mt-5 mb-2">Official Partners</h3>
+        <div class="d-flex partner-logos justify-content-center">
+            {{ range .sponsors }}
             <div class="partner-logo">
+                {{ if .link}}
+                    <a href="{{.link}}" target="_blank"/>
+                        <img src="{{ .src }}" alt="{{ .alt }}" />
+                    </a>
+                {{ else }}
+                    <img src="{{ .src }}" alt="{{ .alt }}" />
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        <h3 class="text-black mt-5 mb-2">Con il patrocinio di</h3>
+        <div class="d-flex patrons-logos justify-content-center mt-3">
+            {{ range .patrons }}
+            <div class="patron-logo">
                 {{ if .link}}
                     <a href="{{.link}}" target="_blank"/>
                         <img src="{{ .src }}" alt="{{ .alt }}" />
