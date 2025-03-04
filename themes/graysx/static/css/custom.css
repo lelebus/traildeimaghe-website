@@ -173,6 +173,11 @@ footer .copyright {
     padding: 0.3rem 0;
 }
 
+ul li {
+    list-style: none;
+    padding: 0.3rem 0;
+}
+
 .sponsors-section {
     padding: 10rem 0;
 }
