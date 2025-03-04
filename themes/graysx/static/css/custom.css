@@ -20,7 +20,8 @@
     src: local('Barlow'), url('Barlow-Medium.ttf') format('truetype');
 }
 
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
@@ -28,7 +29,12 @@ html, body {
     font-family: 'Barlow', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Sifonn Pro', sans-serif;
 }
 
@@ -83,24 +89,28 @@ footer .copyright {
     color: black;
     padding: 1rem 1.5rem 1rem;
 }
-#mainNav ul li .nav-link.active
-#mainNav.navbar-shrink .nav-link.active {
+
+#mainNav ul li .nav-link.active #mainNav.navbar-shrink .nav-link.active {
     border: none !important;
 }
+
 #mainNav ul li .nav-link:hover {
     color: black;
     text-decoration: underline;
 }
+
 #mainNav ul li:last-child .nav-link {
     color: white;
     font-weight: bold;
     background-color: var(--primary);
     margin-left: 1.5rem;
 }
+
 #mainNav ul li:last-child .nav-link:hover {
     text-decoration: none;
     background-color: var(--primary-hover);
 }
+
 #mainNav ul li .nav-link.current {
     font-weight: bold;
     text-decoration: underline;
@@ -126,6 +136,16 @@ footer .copyright {
 
 .masthead .btn:hover {
     background-color: var(--primary-hover);
+}
+
+.masthead .btn.disabled {
+    background-color: var(--primary);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.masthead .btn.disabled:hover {
+    background-color: var(--primary);
 }
 
 #about {
@@ -172,7 +192,7 @@ footer .copyright {
 }
 
 .sponsors-section .partner-logo,
-.sponsors-section .patron-logo{
+.sponsors-section .patron-logo {
     width: 15%;
 }
 
@@ -197,9 +217,11 @@ footer .copyright {
     #mainNav .navbar-brand {
         padding: 0;
     }
+
     #mainNav ul li .nav-link {
         text-align: center;
     }
+
     #mainNav ul li:last-child .nav-link {
         margin: 0;
     }
@@ -279,4 +301,3 @@ i.icon-mobile-phone {
 i.icon-instagram {
     background: url('/assets/icons/instagram.svg');
 }
-

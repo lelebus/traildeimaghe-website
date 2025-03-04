@@ -7,7 +7,7 @@
         <video autoplay loop muted playsinline src="{{ .header.video }}"></video>
     {{ end }}
 
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+    <div id="top" class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <img src="{{ .header.logo.src }}" alt="Logo {{ .Site.Title }}" />
 
@@ -16,7 +16,9 @@
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ .header.description }}</h2>
             </div>
             <div class="text-center absolute-bottom">
-                <a class="btn btn-primary" href="{{ .header.button.url }}" target="_blank" title="{{ .header.button.alt }}">{{ .header.button.text }}</a>
+                {{ with .header.button }}
+                <a class="btn btn-primary {{ if .disabled }}disabled{{ end }}" {{ if not .disabled }}href="{{ .url }}"{{ end }} {{ if not .disabled }}target="_blank"{{ end }} title="{{ .alt }}">{{ .text }}</a>
+                {{ end }}
             </div>
         </div>
     </div>
