@@ -39,8 +39,8 @@ instagram = "https://www.instagram.com/traildeimaghe"
 
   [[menu.main]]
   name = "ISCRIVITI"
-  URL = "/#top"
-  weight = 4
+  URL = "https://keepsporting.com/cr/67c9f54911ba818c02a4df54/trail-dei-maghe"
+  weight = 3
 
 ## Taxonomies (leave empty to remove /tags and /categories)
 [taxonomies]

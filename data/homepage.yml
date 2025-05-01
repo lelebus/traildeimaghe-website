@@ -6,10 +6,9 @@ main:
       alt: "Trail dei Maghe, Monte Cridola" # Logo Alt Text
     # video: "assets/videos/bg-hero.mp4" # Video Background
     button:
-      text: "Le iscrizioni apriranno a breve" 
-      url: "#"
-      alt: "Le iscrizioni apriranno a breve"
-      disabled: true
+      text: "Iscriviti" # Button Text
+      url: "https://keepsporting.com/cr/67c9f54911ba818c02a4df54/trail-dei-maghe" 
+      alt: "Iscriviti alla gara"
 
 # About
 about:
@@ -23,9 +22,23 @@ about:
 
 # Programme
 programme:
-  title: "Programma 15 Giugno 2025"
-  desc: "Il programma dettagliato sarà disponibile prossimamente"
-  enable: false
+  title: "Programma"
+  desc: |
+    - **SABATO 14 GIUGNO**
+    
+    - Dalle 16 alle 19 ritiro pettorali presso il Municipio di Lorenzago 
+
+    - **DOMENICA 15 GIUGNO**
+    - Dalle 7 alle 9 ritiro pettorali ed iscrizioni presso il Municipio di Lorenzago
+    - Ore 9.30 partenza gara competitiva 18 km
+    - Ore 9.35 partenza non competitiva 9 km
+    - Ore 9.40 partenza gara maghetti 3 km
+    - Dalle 12 pranzo presso il tendone in Via del Lago
+    - Ore 14 premiazioni in Piazza Calvi
+    - A seguire party e musica con dj
+    
+    -  [📄 Scarica il regolamento completo](/regolamento-2025.pdf)
+  enable: true
   text: "Button"
   url: "#"
   # image: "assets/img/bg-about.jpg"
