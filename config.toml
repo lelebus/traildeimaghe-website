@@ -14,33 +14,39 @@ socialimage = "/assets/img/logo-black.png"
 
 # Info
 address = "Lorenzago di Cadore, Belluno - Dolomiti"
-date = "15 Giugno 2025"
+date = "21 Giugno 2026"
 phone = "+39 331 939 7508"
 
 # Socials
 instagram = "https://www.instagram.com/traildeimaghe"
+facebook = "https://www.facebook.com/Traildeimaghe"
 
 ## Menu Items
 [menu]
   [[menu.main]]
+  name = "Edizione 2025"
+  URL = "/edizione-2025"
+  weight = 1
+
+  [[menu.main]]
   name = "Edizione 2024"
   URL = "/edizione-2024"
-  weight = 1
+  weight = 2
 
   [[menu.main]]
   name = "Storie e Leggende"
   URL = "/storie-e-leggende"
-  weight = 2
+  weight = 3
 
   [[menu.main]]
   name = "Chi Siamo"
   URL = "/chi-siamo"
-  weight = 3
+  weight = 4
 
   [[menu.main]]
-  name = "ISCRIVITI"
-  URL = "https://keepsporting.com/cr/67c9f54911ba818c02a4df54/trail-dei-maghe"
-  weight = 3
+  name = "COMBINATA 2026"
+  URL = "https://www.avaibooksports.com/inscripcion/trail-de-le-longane/"
+  weight = 5
 
 ## Taxonomies (leave empty to remove /tags and /categories)
 [taxonomies]

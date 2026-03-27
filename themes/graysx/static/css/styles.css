@@ -3036,14 +3036,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: black;
-  background-color: white;
-  border-color: black;
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }
 .btn-primary:hover {
-  color: black;
-  background-color: #e7e7e7;
-  border-color: black;
+  color: white;
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;

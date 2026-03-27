@@ -6,9 +6,9 @@ main:
       alt: "Trail dei Maghe, Monte Cridola" # Logo Alt Text
     # video: "assets/videos/bg-hero.mp4" # Video Background
     button:
-      text: "Iscriviti" # Button Text
-      url: "https://keepsporting.com/cr/67c9f54911ba818c02a4df54/trail-dei-maghe" 
-      alt: "Iscriviti alla gara"
+      text: "Iscrizioni Combinata 2026" # Button Text
+      url: "https://www.avaibooksports.com/inscripcion/trail-de-le-longane/"
+      alt: "Iscriviti alla combinata Trail dei Maghe e Trail de le Longane"
 
 # About
 about:
@@ -22,23 +22,35 @@ about:
 
 # Programme
 programme:
-  title: "Programma"
+  title: "TERZA EDIZIONE"
   desc: |
-    - **SABATO 14 GIUGNO**
-    
-    - Dalle 16 alle 19 ritiro pettorali presso il Municipio di Lorenzago 
+    **DOMENICA 21 GIUGNO 2026**
 
-    - **DOMENICA 15 GIUGNO**
-    - Dalle 7 alle 9 ritiro pettorali ed iscrizioni presso il Municipio di Lorenzago
-    - Ore 9.30 partenza gara competitiva 18 km
-    - Ore 9.35 partenza non competitiva 9 km
-    - Ore 9.40 partenza gara maghetti 3 km
-    - Dalle 12 pranzo presso il tendone in Via del Lago
-    - Ore 14 premiazioni in Piazza Calvi
-    - A seguire party e musica con dj
-    
-    -  [📄 Scarica il regolamento completo](/regolamento-2025.pdf)
-  enable: true
-  text: "Button"
-  url: "#"
+    [Le iscrizioni per la combinata sono già aperte](https://www.avaibooksports.com/inscripcion/trail-de-le-longane/)
+
+    Le iscrizioni solo per il Trail dei Maghe apriranno dal **27 aprile 2026**.
+
+    Programma disponibile a breve.
   # image: "assets/img/bg-about.jpg"
+
+# Combinata Trail dei Maghe + Trail de le Longane
+combinata:
+  title: "Combinata Trail de le Longane + Trail dei Maghe"
+  desc: |
+    Due gare, un'unica sfida: nasce dalla collaborazione tra il **Trail de le Longane** di Lozzo di Cadore e il **Trail dei Maghe** di Lorenzago.
+
+    Nel 2026 torna la promo combinata pensata per chi vuole vivere il meglio del trail in Cadore: **quota agevolata**, **gadget esclusivo** e **classifica dedicata** con la somma dei tempi delle due prove.
+
+    Saranno premiati i **primi 3 uomini** e le **prime 3 donne** con il miglior tempo complessivo.
+
+    Nel 2025 hanno conquistato la combinata **Dylan De Michiel** e **Cecilia De Filippo**.
+
+    [Guarda le classifiche 2025 della combinata →](https://drive.google.com/file/d/1qHxeo6LwNREzvNedgBxS6qf_WT9b_6Mg/view?usp=sharing)
+
+    Questa iniziativa nasce per valorizzare due territori vicini e far scoprire a sempre piu runner le bellezze di Lozzo e Lorenzago.
+
+    **Novita 2026:** arriva anche la **combinata non competitiva**.
+  button:
+    enable: true
+    text: "Iscrizioni 2026 combinata"
+    url: "https://www.avaibooksports.com/inscripcion/trail-de-le-longane/"

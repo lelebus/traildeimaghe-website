@@ -149,7 +149,7 @@ footer .copyright {
 }
 
 #about {
-    background: white;
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
     color: black;
 }
 
@@ -171,6 +171,12 @@ footer .copyright {
 #programme ul li {
     list-style: none;
     padding: 0.3rem 0;
+}
+
+#combinata {
+    background: linear-gradient(180deg, #ffffff 0%, #f2f7ff 100%);
+    border-bottom: 1px solid #dbe7f6;
+    padding: 6rem 0;
 }
 
 ul li {
@@ -305,4 +311,8 @@ i.icon-mobile-phone {
 
 i.icon-instagram {
     background: url('/assets/icons/instagram.svg');
+}
+
+i.icon-facebook {
+    background: url('/assets/icons/facebook.svg');
 }

@@ -67,6 +67,23 @@
     {{ end }}
 </section>
 
+<!-- Combinata-->
+<section class="combinata-section text-center" id="combinata">
+    {{ with site.Data.homepage.combinata }}
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-black mb-4">{{ .title }}</h2>
+                <p class="text-black">{{ .desc | markdownify }}</p>
+                {{ if .button.enable }}
+                <a class="btn btn-primary mt-5" href="{{ .button.url }}" target="_blank" title="{{ .button.text }}">{{ .button.text }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
+
 <!--
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
