@@ -7,9 +7,9 @@ tech_sponsors:
   - src: "/assets/img/sponsor/sportwaybl.png"
     alt: "Sportway Belluno"
     link: "https://sportwaybl.it/"
-  - src: "/assets/img/sponsor/brooks.png"
-    alt: "Brooks Running"
-    link: "https://www.brooksrunning.com/"
+  - src: "/assets/img/sponsor/altra.png"
+    alt: "ALTRA"
+    link: "https://eu.altrarunning.com/"
 
 main_sponsors: 
   - src: "/assets/img/sponsor/carraro.png"
@@ -18,9 +18,9 @@ main_sponsors:
   - src: "/assets/img/sponsor/hausbrandt.png"
     alt: "Hausbrandt"
     link: "https://www.hausbrandt.it/"
-  - src: "/assets/img/sponsor/brooks.png"
-    alt: "Brooks Running"
-    link: "https://www.brooksrunning.com/"
+  - src: "/assets/img/sponsor/altra.png"
+    alt: "ALTRA"
+    link: "https://eu.altrarunning.com/"
     
 official_sponsors:
   - src: "/assets/img/sponsor/farmaciedolomiti.png"
