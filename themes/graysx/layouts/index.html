@@ -56,7 +56,7 @@
                 <h2 class="text-black mb-4">{{ .title }}</h2>
                 <p class="text-black">{{ .desc | markdownify }}</p>
                 {{ if .button.enable }}
-                <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
+                <a class="mt-5 btn btn-primary about-btn" href="{{ .button.url }}" target="_blank" rel="noopener noreferrer">{{ .button.text }}</a>
                 {{ end }}
             </div>
         </div>

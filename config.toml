@@ -39,14 +39,19 @@ facebook = "https://www.facebook.com/Traildeimaghe"
   weight = 3
 
   [[menu.main]]
+  name = "Iscrizioni"
+  URL = "https://www.avaibooksports.com/inscripcion/trail-dei-maghe/inscripcion_datos/"
+  weight = 4
+
+  [[menu.main]]
   name = "Chi Siamo"
   URL = "/chi-siamo"
-  weight = 4
+  weight = 5
 
   [[menu.main]]
   name = "COMBINATA 2026"
   URL = "https://www.avaibooksports.com/inscripcion/trail-de-le-longane/"
-  weight = 5
+  weight = 6
 
 ## Taxonomies (leave empty to remove /tags and /categories)
 [taxonomies]

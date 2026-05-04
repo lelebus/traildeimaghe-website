@@ -6,9 +6,9 @@ main:
       alt: "Trail dei Maghe, Monte Cridola" # Logo Alt Text
     # video: "assets/videos/bg-hero.mp4" # Video Background
     button:
-      text: "Iscrizioni Combinata 2026" # Button Text
-      url: "https://www.avaibooksports.com/inscripcion/trail-de-le-longane/"
-      alt: "Iscriviti alla combinata Trail dei Maghe e Trail de le Longane"
+      text: "Iscrizioni Trail dei Maghe 2026" # Button Text
+      url: "https://www.avaibooksports.com/inscripcion/trail-dei-maghe/inscripcion_datos/"
+      alt: "Iscriviti al Trail dei Maghe su Avaibook Sports"
 
 # About
 about:
@@ -22,15 +22,35 @@ about:
 
 # Programme
 programme:
-  title: "TERZA EDIZIONE"
+  title: "Programma – Terza edizione"
   desc: |
-    **DOMENICA 21 GIUGNO 2026**
+    **SABATO 20 GIUGNO**
 
-    [Le iscrizioni per la combinata sono già aperte](https://www.avaibooksports.com/inscripcion/trail-de-le-longane/)
+    Dalle **16** alle **19** – ritiro pettorali ed iscrizioni presso il Municipio di Lorenzago
 
-    Le iscrizioni solo per il Trail dei Maghe apriranno dal **27 aprile 2026**.
+    **DOMENICA 21 GIUGNO**
 
-    Programma disponibile a breve.
+    Dalle **7.00** alle **9.00** – ritiro pettorali ed iscrizioni presso il Municipio di Lorenzago
+
+    **09.30** – partenza gara competitiva 18 km
+
+    **09.35** – partenza non competitiva 9 km
+
+    **09.40** – partenza gara maghetti 3 km
+
+    Dalle **12** – pranzo in Piazza Calvi
+
+    **14.00** – premiazioni in Piazza Calvi
+
+    A seguire party e musica con DJ
+
+    *Possibile iscrizione scontata per gruppi, per info [traildeimaghe@gmail.com](mailto:traildeimaghe@gmail.com) oppure cell. [331 939 7508](tel:+393319397508)*
+
+    Chiusura iscrizioni online **venerdì 19 giugno** alle ore **23.59**. Iscrizioni maggiorate il giorno della gara.
+  button:
+    enable: true
+    text: "Iscriviti online"
+    url: "https://www.avaibooksports.com/inscripcion/trail-dei-maghe/inscripcion_datos/"
   # image: "assets/img/bg-about.jpg"
 
 # Combinata Trail dei Maghe + Trail de le Longane

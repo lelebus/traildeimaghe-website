@@ -3,9 +3,11 @@
 title: 'Chi Siamo'
 ---
 
-Siamo il gruppo di volontari della **Pro Loco di Lorenzago**.
+Siamo un gruppo di volontari della **Pro Loco di Lorenzago di Cadore**, uniti dalla passione per la montagna e per lo sport.
 
-In collaborazione con la società sportiva **US Aquilotti**, e con il Patrocinio del **Comune di Lorenzago**, abbiamo l'onore di presentare la prima edizione di questa emozionante corsa e camminata.
+Ogni anno organizziamo il Trail dei Maghe con entusiasmo e attenzione ai dettagli, con l'obiettivo di offrire un'esperienza autentica, capace di valorizzare il territorio e coinvolgere atleti e appassionati.
+
+L'evento nasce grazie alla collaborazione con la società sportiva **US Aquilotti** e con il patrocinio del **Comune di Lorenzago di Cadore**, realtà fondamentali per la crescita e il successo della manifestazione.
 
 ### Contatti
 
