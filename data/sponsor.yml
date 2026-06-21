@@ -9,6 +9,9 @@ tech_sponsors:
     link: "https://eu.altrarunning.com/"
 
 main_sponsors: 
+  - src: "/assets/img/sponsor/theresianer.jpeg"
+    alt: "Theresianer"
+    link: "https://www.theresianer.it/"
   - src: "/assets/img/sponsor/carraro.png"
     alt: "Carraro Concessionaria"
     link: "https://www.gruppocarraro.it/"
